@@ -15,9 +15,13 @@
 		A5397DAA20038FFA00C5993D /* RDFirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */; };
 		A5397DAD2003900600C5993D /* RDSecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DAC2003900600C5993D /* RDSecondTableViewController.m */; };
 		A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DAF2003901000C5993D /* RDThirdTableViewController.m */; };
+		A55709E22003AF5F005E8D41 /* RDImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */; };
+		A55709E52003BAE5005E8D41 /* RDRotableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55709E42003BAE5005E8D41 /* RDRotableView.m */; };
+		A79F17119860273F118E338C /* libPods-RotationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B9A0CCBF278071C92E044C /* libPods-RotationDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B9A0CCBF278071C92E044C /* libPods-RotationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RotationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5397D8F20038A9F00C5993D /* RotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5397D9220038A9F00C5993D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5397D9320038A9F00C5993D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,6 +36,13 @@
 		A5397DAC2003900600C5993D /* RDSecondTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSecondTableViewController.m; sourceTree = "<group>"; };
 		A5397DAE2003901000C5993D /* RDThirdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDThirdTableViewController.h; sourceTree = "<group>"; };
 		A5397DAF2003901000C5993D /* RDThirdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDThirdTableViewController.m; sourceTree = "<group>"; };
+		A55709DF2003ADB5005E8D41 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A55709E02003AF5F005E8D41 /* RDImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDImageTableViewCell.h; sourceTree = "<group>"; };
+		A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDImageTableViewCell.m; sourceTree = "<group>"; };
+		A55709E32003BAE5005E8D41 /* RDRotableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDRotableView.h; sourceTree = "<group>"; };
+		A55709E42003BAE5005E8D41 /* RDRotableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDRotableView.m; sourceTree = "<group>"; };
+		E018D6BA253DDFE29FD57E64 /* Pods-RotationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FD43CA5E322D33B3D2E2BE21 /* Pods-RotationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79F17119860273F118E338C /* libPods-RotationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47A834D42F15B50F76C6A511 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B9A0CCBF278071C92E044C /* libPods-RotationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5397D8620038A9F00C5993D = {
 			isa = PBXGroup;
 			children = (
 				A5397D9120038A9F00C5993D /* RotationDemo */,
 				A5397D9020038A9F00C5993D /* Products */,
+				DC8DF1903A28DCA446CFE40D /* Pods */,
+				47A834D42F15B50F76C6A511 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,19 +88,57 @@
 			children = (
 				A5397D9220038A9F00C5993D /* AppDelegate.h */,
 				A5397D9320038A9F00C5993D /* AppDelegate.m */,
-				A5397DA820038FFA00C5993D /* RDFirstTableViewController.h */,
-				A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */,
-				A5397DAB2003900600C5993D /* RDSecondTableViewController.h */,
-				A5397DAC2003900600C5993D /* RDSecondTableViewController.m */,
-				A5397DAE2003901000C5993D /* RDThirdTableViewController.h */,
-				A5397DAF2003901000C5993D /* RDThirdTableViewController.m */,
+				A55709E02003AF5F005E8D41 /* RDImageTableViewCell.h */,
+				A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */,
+				A55709E62003BAF4005E8D41 /* ViewController rotation */,
+				A55709E72003BB2D005E8D41 /* View rotation */,
+				A55709E82003BB43005E8D41 /* Size classes rotation */,
 				A5397D9820038A9F00C5993D /* Main.storyboard */,
 				A5397D9B20038A9F00C5993D /* Assets.xcassets */,
 				A5397D9D20038A9F00C5993D /* LaunchScreen.storyboard */,
 				A5397DA020038A9F00C5993D /* Info.plist */,
 				A5397DA120038A9F00C5993D /* main.m */,
+				A55709DF2003ADB5005E8D41 /* PrefixHeader.pch */,
 			);
 			path = RotationDemo;
+			sourceTree = "<group>";
+		};
+		A55709E62003BAF4005E8D41 /* ViewController rotation */ = {
+			isa = PBXGroup;
+			children = (
+				A5397DA820038FFA00C5993D /* RDFirstTableViewController.h */,
+				A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */,
+			);
+			path = "ViewController rotation";
+			sourceTree = "<group>";
+		};
+		A55709E72003BB2D005E8D41 /* View rotation */ = {
+			isa = PBXGroup;
+			children = (
+				A55709E32003BAE5005E8D41 /* RDRotableView.h */,
+				A55709E42003BAE5005E8D41 /* RDRotableView.m */,
+				A5397DAB2003900600C5993D /* RDSecondTableViewController.h */,
+				A5397DAC2003900600C5993D /* RDSecondTableViewController.m */,
+			);
+			path = "View rotation";
+			sourceTree = "<group>";
+		};
+		A55709E82003BB43005E8D41 /* Size classes rotation */ = {
+			isa = PBXGroup;
+			children = (
+				A5397DAE2003901000C5993D /* RDThirdTableViewController.h */,
+				A5397DAF2003901000C5993D /* RDThirdTableViewController.m */,
+			);
+			path = "Size classes rotation";
+			sourceTree = "<group>";
+		};
+		DC8DF1903A28DCA446CFE40D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD43CA5E322D33B3D2E2BE21 /* Pods-RotationDemo.debug.xcconfig */,
+				E018D6BA253DDFE29FD57E64 /* Pods-RotationDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5397DA520038A9F00C5993D /* Build configuration list for PBXNativeTarget "RotationDemo" */;
 			buildPhases = (
+				E4BDC7DD9404FFB0966332A8 /* [CP] Check Pods Manifest.lock */,
 				A5397D8B20038A9F00C5993D /* Sources */,
 				A5397D8C20038A9F00C5993D /* Frameworks */,
 				A5397D8D20038A9F00C5993D /* Resources */,
+				1C47C9DC46BA6313006C2719 /* [CP] Embed Pods Frameworks */,
+				8E1491B333D001349744339E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +210,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C47C9DC46BA6313006C2719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E1491B333D001349744339E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BDC7DD9404FFB0966332A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RotationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5397D8B20038A9F00C5993D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,6 +269,8 @@
 				A5397DA220038A9F00C5993D /* main.m in Sources */,
 				A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */,
 				A5397DAD2003900600C5993D /* RDSecondTableViewController.m in Sources */,
+				A55709E22003AF5F005E8D41 /* RDImageTableViewCell.m in Sources */,
+				A55709E52003BAE5005E8D41 /* RDRotableView.m in Sources */,
 				A5397DAA20038FFA00C5993D /* RDFirstTableViewController.m in Sources */,
 				A5397D9420038A9F00C5993D /* AppDelegate.m in Sources */,
 			);
@@ -288,10 +404,13 @@
 		};
 		A5397DA620038A9F00C5993D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD43CA5E322D33B3D2E2BE21 /* Pods-RotationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V842XQF487;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = RotationDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = RotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zesming.RotationDemo;
@@ -302,10 +421,13 @@
 		};
 		A5397DA720038A9F00C5993D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E018D6BA253DDFE29FD57E64 /* Pods-RotationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V842XQF487;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = RotationDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = RotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.zesming.RotationDemo;

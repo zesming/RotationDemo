@@ -37,26 +37,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDFirstTableViewCell" rowHeight="120" id="Zwb-Nd-c7J">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDFirstTableViewCell" rowHeight="120" id="Zwb-Nd-c7J" customClass="RDImageTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zwb-Nd-c7J" id="7Tq-mQ-joz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="IPq-XY-L9H">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-uT-4FJ">
                                             <rect key="frame" x="142" y="14" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="NmE-rj-IUG"/>
-                                                <constraint firstAttribute="width" constant="90" id="fmI-AR-pNp"/>
+                                                <constraint firstAttribute="width" constant="90" id="yTW-go-lS2"/>
+                                                <constraint firstAttribute="height" constant="90" id="z6G-uh-9QT"/>
                                             </constraints>
-                                        </imageView>
+                                            <state key="normal" image="pic"/>
+                                            <connections>
+                                                <action selector="imageButtonAction:" destination="Zwb-Nd-c7J" eventType="touchUpInside" id="dJf-gN-5En"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="IPq-XY-L9H" firstAttribute="centerY" secondItem="7Tq-mQ-joz" secondAttribute="centerY" id="C8u-Zo-J5T"/>
-                                        <constraint firstItem="IPq-XY-L9H" firstAttribute="centerX" secondItem="7Tq-mQ-joz" secondAttribute="centerX" id="eta-U8-wMt"/>
+                                        <constraint firstItem="HUA-uT-4FJ" firstAttribute="centerY" secondItem="7Tq-mQ-joz" secondAttribute="centerY" id="IOU-tU-3Cl"/>
+                                        <constraint firstItem="HUA-uT-4FJ" firstAttribute="centerX" secondItem="7Tq-mQ-joz" secondAttribute="centerX" id="M2A-GB-t0R"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageButton" destination="HUA-uT-4FJ" id="meC-wI-Sa9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -76,6 +83,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qhg-qf-j9b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rEh-b7-mhy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -117,26 +125,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RDSecondTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDSecondTableViewCell" rowHeight="120" id="JoR-Xx-ys6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RDSecondTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDSecondTableViewCell" rowHeight="120" id="JoR-Xx-ys6" customClass="RDImageTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JoR-Xx-ys6" id="0OU-Qm-caC">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="5JB-pH-sH2">
-                                            <rect key="frame" x="142.5" y="14" width="90" height="90"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrx-80-afW">
+                                            <rect key="frame" x="142" y="14" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="iBr-CN-q69"/>
-                                                <constraint firstAttribute="height" constant="90" id="p3C-Pf-rUz"/>
+                                                <constraint firstAttribute="width" constant="90" id="8VP-yt-Rd9"/>
+                                                <constraint firstAttribute="height" constant="90" id="IUl-hS-uGO"/>
                                             </constraints>
-                                        </imageView>
+                                            <state key="normal" image="pic"/>
+                                            <connections>
+                                                <action selector="imageButtonAction:" destination="JoR-Xx-ys6" eventType="touchUpInside" id="azl-Pc-gVR"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="5JB-pH-sH2" firstAttribute="centerY" secondItem="0OU-Qm-caC" secondAttribute="centerY" id="N1J-LY-Iwr"/>
-                                        <constraint firstItem="5JB-pH-sH2" firstAttribute="centerX" secondItem="0OU-Qm-caC" secondAttribute="centerX" id="noI-KN-PH9"/>
+                                        <constraint firstItem="qrx-80-afW" firstAttribute="centerY" secondItem="0OU-Qm-caC" secondAttribute="centerY" id="7TA-RJ-JXZ"/>
+                                        <constraint firstItem="qrx-80-afW" firstAttribute="centerX" secondItem="0OU-Qm-caC" secondAttribute="centerX" id="mlK-1J-k08"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageButton" destination="qrx-80-afW" id="gfk-fy-ugl"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -178,26 +193,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RDThirdTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDThirdTableViewCell" rowHeight="120" id="CBY-T3-0wT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RDThirdTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RDThirdTableViewCell" rowHeight="120" id="CBY-T3-0wT" customClass="RDImageTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CBY-T3-0wT" id="ypd-08-yKe">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="nFo-ij-9D8">
-                                            <rect key="frame" x="142.5" y="14" width="90" height="90"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOS-NI-sbr">
+                                            <rect key="frame" x="142" y="14" width="90" height="90"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="Hcp-Nk-df2"/>
-                                                <constraint firstAttribute="width" constant="90" id="pLX-Qh-R2N"/>
+                                                <constraint firstAttribute="height" constant="90" id="K9j-xM-50f"/>
+                                                <constraint firstAttribute="width" constant="90" id="L4Z-HI-4Va"/>
                                             </constraints>
-                                        </imageView>
+                                            <state key="normal" image="pic"/>
+                                            <connections>
+                                                <action selector="imageButtonAction:" destination="CBY-T3-0wT" eventType="touchUpInside" id="nlw-s0-Gwx"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="nFo-ij-9D8" firstAttribute="centerX" secondItem="ypd-08-yKe" secondAttribute="centerX" id="0zV-tA-60L"/>
-                                        <constraint firstItem="nFo-ij-9D8" firstAttribute="centerY" secondItem="ypd-08-yKe" secondAttribute="centerY" id="D0z-Mz-Na3"/>
+                                        <constraint firstItem="aOS-NI-sbr" firstAttribute="centerY" secondItem="ypd-08-yKe" secondAttribute="centerY" id="Pvh-xm-DJO"/>
+                                        <constraint firstItem="aOS-NI-sbr" firstAttribute="centerX" secondItem="ypd-08-yKe" secondAttribute="centerX" id="WdU-zr-6zo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageButton" destination="aOS-NI-sbr" id="9bC-U9-Oum"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
