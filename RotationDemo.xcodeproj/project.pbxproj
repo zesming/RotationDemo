@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		A5397D9420038A9F00C5993D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397D9320038A9F00C5993D /* AppDelegate.m */; };
-		A5397D9720038A9F00C5993D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397D9620038A9F00C5993D /* ViewController.m */; };
 		A5397D9A20038A9F00C5993D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5397D9820038A9F00C5993D /* Main.storyboard */; };
 		A5397D9C20038A9F00C5993D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5397D9B20038A9F00C5993D /* Assets.xcassets */; };
 		A5397D9F20038A9F00C5993D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5397D9D20038A9F00C5993D /* LaunchScreen.storyboard */; };
 		A5397DA220038A9F00C5993D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DA120038A9F00C5993D /* main.m */; };
+		A5397DAA20038FFA00C5993D /* RDFirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */; };
+		A5397DAD2003900600C5993D /* RDSecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DAC2003900600C5993D /* RDSecondTableViewController.m */; };
+		A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DAF2003901000C5993D /* RDThirdTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5397D8F20038A9F00C5993D /* RotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5397D9220038A9F00C5993D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5397D9320038A9F00C5993D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5397D9520038A9F00C5993D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5397D9620038A9F00C5993D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5397D9920038A9F00C5993D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5397D9B20038A9F00C5993D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5397D9E20038A9F00C5993D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5397DA020038A9F00C5993D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5397DA120038A9F00C5993D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5397DA820038FFA00C5993D /* RDFirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDFirstTableViewController.h; sourceTree = "<group>"; };
+		A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDFirstTableViewController.m; sourceTree = "<group>"; };
+		A5397DAB2003900600C5993D /* RDSecondTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDSecondTableViewController.h; sourceTree = "<group>"; };
+		A5397DAC2003900600C5993D /* RDSecondTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSecondTableViewController.m; sourceTree = "<group>"; };
+		A5397DAE2003901000C5993D /* RDThirdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDThirdTableViewController.h; sourceTree = "<group>"; };
+		A5397DAF2003901000C5993D /* RDThirdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDThirdTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				A5397D9220038A9F00C5993D /* AppDelegate.h */,
 				A5397D9320038A9F00C5993D /* AppDelegate.m */,
-				A5397D9520038A9F00C5993D /* ViewController.h */,
-				A5397D9620038A9F00C5993D /* ViewController.m */,
+				A5397DA820038FFA00C5993D /* RDFirstTableViewController.h */,
+				A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */,
+				A5397DAB2003900600C5993D /* RDSecondTableViewController.h */,
+				A5397DAC2003900600C5993D /* RDSecondTableViewController.m */,
+				A5397DAE2003901000C5993D /* RDThirdTableViewController.h */,
+				A5397DAF2003901000C5993D /* RDThirdTableViewController.m */,
 				A5397D9820038A9F00C5993D /* Main.storyboard */,
 				A5397D9B20038A9F00C5993D /* Assets.xcassets */,
 				A5397D9D20038A9F00C5993D /* LaunchScreen.storyboard */,
@@ -142,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5397D9720038A9F00C5993D /* ViewController.m in Sources */,
 				A5397DA220038A9F00C5993D /* main.m in Sources */,
+				A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */,
+				A5397DAD2003900600C5993D /* RDSecondTableViewController.m in Sources */,
+				A5397DAA20038FFA00C5993D /* RDFirstTableViewController.m in Sources */,
 				A5397D9420038A9F00C5993D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RDSecondTableViewController.h
 //  RotationDemo
 //
 //  Created by 赵恩生 on 2018/1/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RDSecondTableViewController : UITableViewController
 
 @end
-
