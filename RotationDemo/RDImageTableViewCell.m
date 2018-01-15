@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *imageButton;
 
-
 @end
 
 @implementation RDImageTableViewCell
@@ -22,6 +21,10 @@
         CGRect buttonGlobalFrame = [self.contentView convertRect:self.imageButton.frame toView:nil];
         self.buttonAction(buttonGlobalFrame);
     }
+}
+
+- (UIImage *)currentButtonImage {
+    return self.imageButton.currentImage;
 }
 
 @end

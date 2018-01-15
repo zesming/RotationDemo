@@ -48,6 +48,27 @@
 }
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    UITabBarController *tabBarController = nil;
+    UINavigationController *navigationController = nil;
+    UIViewController *viewController = nil;
+    
+    if ([window.rootViewController isKindOfClass:[UITabBarController class]]) {
+        tabBarController = (UITabBarController *)window.rootViewController;
+        navigationController = tabBarController.selectedViewController;
+        viewController = [navigationController.viewControllers lastObject];
+        
+        if ([viewController.presentedViewController isKindOfClass:NSClassFromString(@"RDFirstRotableViewController")]) {
+            return UIInterfaceOrientationMaskAllButUpsideDown;
+        }
+        
+        if ([viewController isKindOfClass:NSClassFromString(@"RDFourthViewController")]) {
+            return UIInterfaceOrientationMaskAllButUpsideDown;
+        }
+        
+    } else {
+        return window.rootViewController.supportedInterfaceOrientations;
+    }
+    
     return UIInterfaceOrientationMaskPortrait;
 }
 

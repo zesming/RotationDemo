@@ -17,6 +17,9 @@
 		A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5397DAF2003901000C5993D /* RDThirdTableViewController.m */; };
 		A55709E22003AF5F005E8D41 /* RDImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */; };
 		A55709E52003BAE5005E8D41 /* RDRotableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55709E42003BAE5005E8D41 /* RDRotableView.m */; };
+		A5649D78200775AD0057D60A /* RDFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5649D77200775AD0057D60A /* RDFourthViewController.m */; };
+		A5F1628520063D900065F18B /* RDFirstRotableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1628420063D900065F18B /* RDFirstRotableViewController.m */; };
+		A5F1628820063DCE0065F18B /* RDThirdRotableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1628720063DCE0065F18B /* RDThirdRotableViewController.m */; };
 		A79F17119860273F118E338C /* libPods-RotationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B9A0CCBF278071C92E044C /* libPods-RotationDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,12 @@
 		A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDImageTableViewCell.m; sourceTree = "<group>"; };
 		A55709E32003BAE5005E8D41 /* RDRotableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDRotableView.h; sourceTree = "<group>"; };
 		A55709E42003BAE5005E8D41 /* RDRotableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDRotableView.m; sourceTree = "<group>"; };
+		A5649D76200775AD0057D60A /* RDFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDFourthViewController.h; sourceTree = "<group>"; };
+		A5649D77200775AD0057D60A /* RDFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDFourthViewController.m; sourceTree = "<group>"; };
+		A5F1628320063D900065F18B /* RDFirstRotableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDFirstRotableViewController.h; sourceTree = "<group>"; };
+		A5F1628420063D900065F18B /* RDFirstRotableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDFirstRotableViewController.m; sourceTree = "<group>"; };
+		A5F1628620063DCE0065F18B /* RDThirdRotableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDThirdRotableViewController.h; sourceTree = "<group>"; };
+		A5F1628720063DCE0065F18B /* RDThirdRotableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDThirdRotableViewController.m; sourceTree = "<group>"; };
 		E018D6BA253DDFE29FD57E64 /* Pods-RotationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FD43CA5E322D33B3D2E2BE21 /* Pods-RotationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RotationDemo/Pods-RotationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +101,8 @@
 				A55709E12003AF5F005E8D41 /* RDImageTableViewCell.m */,
 				A55709E62003BAF4005E8D41 /* ViewController rotation */,
 				A55709E72003BB2D005E8D41 /* View rotation */,
-				A55709E82003BB43005E8D41 /* Size classes rotation */,
+				A55709E82003BB43005E8D41 /* Window rotation */,
+				A5649D79200775BA0057D60A /* Size classes */,
 				A5397D9820038A9F00C5993D /* Main.storyboard */,
 				A5397D9B20038A9F00C5993D /* Assets.xcassets */,
 				A5397D9D20038A9F00C5993D /* LaunchScreen.storyboard */,
@@ -108,6 +118,8 @@
 			children = (
 				A5397DA820038FFA00C5993D /* RDFirstTableViewController.h */,
 				A5397DA920038FFA00C5993D /* RDFirstTableViewController.m */,
+				A5F1628320063D900065F18B /* RDFirstRotableViewController.h */,
+				A5F1628420063D900065F18B /* RDFirstRotableViewController.m */,
 			);
 			path = "ViewController rotation";
 			sourceTree = "<group>";
@@ -123,13 +135,24 @@
 			path = "View rotation";
 			sourceTree = "<group>";
 		};
-		A55709E82003BB43005E8D41 /* Size classes rotation */ = {
+		A55709E82003BB43005E8D41 /* Window rotation */ = {
 			isa = PBXGroup;
 			children = (
 				A5397DAE2003901000C5993D /* RDThirdTableViewController.h */,
 				A5397DAF2003901000C5993D /* RDThirdTableViewController.m */,
+				A5F1628620063DCE0065F18B /* RDThirdRotableViewController.h */,
+				A5F1628720063DCE0065F18B /* RDThirdRotableViewController.m */,
 			);
-			path = "Size classes rotation";
+			path = "Window rotation";
+			sourceTree = "<group>";
+		};
+		A5649D79200775BA0057D60A /* Size classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5649D76200775AD0057D60A /* RDFourthViewController.h */,
+				A5649D77200775AD0057D60A /* RDFourthViewController.m */,
+			);
+			path = "Size classes";
 			sourceTree = "<group>";
 		};
 		DC8DF1903A28DCA446CFE40D /* Pods */ = {
@@ -267,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5397DA220038A9F00C5993D /* main.m in Sources */,
+				A5F1628520063D900065F18B /* RDFirstRotableViewController.m in Sources */,
+				A5649D78200775AD0057D60A /* RDFourthViewController.m in Sources */,
 				A5397DB02003901000C5993D /* RDThirdTableViewController.m in Sources */,
+				A5F1628820063DCE0065F18B /* RDThirdRotableViewController.m in Sources */,
 				A5397DAD2003900600C5993D /* RDSecondTableViewController.m in Sources */,
 				A55709E22003AF5F005E8D41 /* RDImageTableViewCell.m in Sources */,
 				A55709E52003BAE5005E8D41 /* RDRotableView.m in Sources */,

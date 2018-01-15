@@ -11,5 +11,6 @@
 @interface RDImageTableViewCell : UITableViewCell
 
 @property (nonatomic, copy) void (^buttonAction)(CGRect buttonFrame);
+@property (nonatomic, strong, readonly) UIImage *currentButtonImage;
 
 @end
